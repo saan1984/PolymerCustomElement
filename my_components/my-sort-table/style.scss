@@ -1,0 +1,19 @@
+:host{
+  &::shadow{
+    table{
+      background: green ;
+      thead{
+        tr{
+          th{
+            .columnSort{
+
+            }
+          }
+        }
+      }
+      tbody{
+
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "PolymerCustomElement",
+  "version": "0.0.0",
+  "authors": [
+    "saan1984 <sandeep_giet@yahoo.com>"
+  ],
+  "description": "custome element demo",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#0.5"
+  }
+}

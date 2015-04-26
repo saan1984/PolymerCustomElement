@@ -1,0 +1,19 @@
+<link rel="import" href="../my-table/my-table.html">
+<polymer-element name="my-sort-table" extends="my-table">
+    <template>
+        <style>
+            @import "style.css";
+        </style>
+        <shadow></shadow>
+    </template>
+    <script>
+        Polymer({
+            ready:function(){
+                this.super([
+                    '[{"name":"Month1","key":"monthHeader","class":"my-table columnSort"},' +
+                    '{"name":"Savings","key":"savingHeader","class":"my-table columnSort"}]'
+                ]);
+            }
+        });
+    </script>
+</polymer-element>

@@ -1,0 +1,36 @@
+<polymer-element name="my-table" attributes="tableHeader">
+    <template>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+            }
+        </style>
+        <table>
+            <thead>
+            <tr>
+                <template repeat="{{ header in headerList }}">
+                   <th key="{{header.key}}" class="{{header.class}}">
+                       {{header.name}}
+                   </th>
+                </template>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>January</td>
+                <td>$100</td>
+            </tr>
+            </tbody>
+        </table>
+    </template>
+    <script>
+        /*my-table:ready method can be overidden from child elements.
+         * accept argument is [] array
+         */
+        Polymer({
+            ready:function(inputHeaders){
+                this.headerList = JSON.parse(inputHeaders || this.tableHeader) ;
+            }
+        });
+    </script>
+</polymer-element>
